@@ -41,21 +41,30 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
     <!-- Character Counter -->
     <script
       type="text/javascript"
       src="/scripts/composer-char-counter.js"
+    ></script>
+
+    <!-- Timeago Library -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
     ></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span><a href="#top">tweeter</a></span>
       <div>
-        Write a new tweet
-        <br />
-        <i class="fa-solid fa-angles-down" style="color: #ff0000"></i>
+        <a href="#new-tweet">
+          Write a new tweet
+          <br />
+          <i class="fa-solid fa-angles-down" style="color: #ff0000"></i
+        ></a>
       </div>
     </nav>
 
@@ -71,23 +80,27 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet" id="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets/" method="POST">
-          <label class="tweet-text" for="tweet-text"
-            >What are you humming about?</label
-          >
-          <textarea name="text" id="tweet-text"></textarea>
+        <form id="tweet-form" action="/tweets/" method="POST">
+          <div class="input">
+            <label class="tweet-text" for="tweet-text"
+              >What are you humming about?</label
+            >
+            <textarea name="text" id="tweet-text">What's happening?</textarea>
+          </div>
           <div class="tweet-counter">
             <button class="tweet-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+        <h6 id="alert">Limit of 140 characters</h6>
+        <h6 id="alertNoChar">Enter Text to Tweet</h6>
       </section>
 
       <!-- Page-specific (main) content here -->
       <section class="tweet-container">
-        <article class="tweet">
+        <!-- <article class="tweet">
           <header>
             <p>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -102,9 +115,8 @@
               <i class="fa-solid fa-heart"></i>
             </div>
           </footer>
-        </article>
+        </article> -->
       </section>
     </main>
-    <script></script>
   </body>
 </html>

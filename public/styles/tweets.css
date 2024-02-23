@@ -1,5 +1,16 @@
-article {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  padding-inline-start: 100px;
+}
 
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
   margin-bottom: 10px;
 }
 
@@ -24,21 +35,22 @@ article.tweet header {
 
 article.tweet footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   height: 35px;
   align-items: center;
   border-top: 5px solid;
 }
 
-div.icons {
+.tweet-footer-icons {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
   align-content: center;
   flex-wrap: wrap;
-
+  display: flex;
+  justify-content: right;
 }
 
-div.icons i {
+.tweet-footer-icons i {
   margin: 2px;
 }
 
@@ -55,6 +67,28 @@ article.tweet:hover {
   box-shadow: 5px 5px grey;
 }
 
-div.icons i:hover {
+.tweet-footer-icons i:hover {
   color: #e8b920;
+}
+
+#alert {
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #f4f1ec;
+}
+
+#alertNoChar {
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #f4f1ec;
 }

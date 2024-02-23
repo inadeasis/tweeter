@@ -2,9 +2,10 @@
    height: 120px;
    width: 100%;
    background-color: #4056A1;
-   color: #FFF;
+   color: #FFF !important;
    padding: 1.5em;
    position: fixed;
+   
  }
 
 nav span {
@@ -19,3 +20,9 @@ nav div i{
   position: absolute;
   right: 4.75em
 }
+
+a {
+  text-decoration: none;
+  color: #FFF !important;
+}
+
