@@ -3,6 +3,7 @@
   flex-direction: column;
   align-content: flex-start;
   padding-inline-start: 100px;
+  padding-bottom: 100px;
 }
 
 .input {
