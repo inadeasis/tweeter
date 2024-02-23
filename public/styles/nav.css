@@ -1,0 +1,21 @@
+ nav {
+   height: 120px;
+   width: 100%;
+   background-color: #4056A1;
+   color: #FFF;
+   padding: 1.5em;
+   position: fixed;
+ }
+
+nav span {
+  font-family: "Bungee", sans-serif;
+}
+
+nav div {
+  float: right;
+}
+
+nav div i{
+  position: absolute;
+  right: 4.75em
+}

@@ -11,15 +11,25 @@ html {
 }
 
 /*
- * Global layout stuff
+ * Global layohttps://live.staticflickr.com/65535/52661336564_96b6e1b0a4_o.gifut stuff
  */
+
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  display: flex;
+  width: 90%;
+  background-color: #f4f1ec;
+  align-content: center;
+  justify-content: center;
+ }
