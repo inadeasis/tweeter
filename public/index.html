@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <!-- Tweet Button + Counter Stylesheet -->
     <link rel="stylesheet" href="/styles/tweet-button.css" type="text/css" />
+    <!-- Tweets -->
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,7 +65,7 @@
       </div>
       <br />
       <div>
-        <h2>Your Name</h2>
+        <h2>Ina</h2>
       </div>
     </header>
 
@@ -76,21 +78,29 @@
             >What are you humming about?</label
           >
           <textarea name="text" id="tweet-text"></textarea>
-          <div class="tweet">
+          <div class="tweet-counter">
             <button class="tweet-button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+
+      <!-- Page-specific (main) content here -->
+      <section class="tweet-container">
         <article class="tweet">
-          <header></header>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <header>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </header>
           <footer>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
+            <h6>Time of Tweet</h6>
+            <div class="icons">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
           </footer>
         </article>
       </section>
