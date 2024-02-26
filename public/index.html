@@ -67,56 +67,47 @@
         ></a>
       </div>
     </nav>
-
-    <header>
-      <div>
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div>
-        <h2>Ina</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet" id="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form id="tweet-form" action="/tweets/" method="POST">
-          <div class="input">
-            <label class="tweet-text" for="tweet-text"
-              >What are you humming about?</label
-            >
-            <textarea name="text" id="tweet-text">What's happening?</textarea>
-          </div>
-          <div class="tweet-counter">
-            <button class="tweet-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-        <h6 id="alert">Limit of 140 characters</h6>
-        <h6 id="alertNoChar">Enter Text to Tweet</h6>
-      </section>
+    
+      <header class="user-banner">
+        <div>
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div>
+          <h2>Ina</h2>
+        </div>
+      </header>
 
       <!-- Page-specific (main) content here -->
-      <section class="tweet-container">
-        <!-- <article class="tweet">
-          <header>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </header>
-          <footer>
-            <h6>Time of Tweet</h6>
-            <div class="icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
+      <main class="container">
+        <section class="new-tweet" id="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form id="tweet-form" action="/tweets/" method="POST">
+            <div class="input">
+              <label class="tweet-text" for="tweet-text"
+                >What are you humming about?</label
+              >
+              <textarea
+                name="text"
+                id="tweet-text"
+                onfocus="clearContents(this);"
+              >
+Start Tweeting..</textarea
+              >
             </div>
-          </footer>
-        </article> -->
-      </section>
-    </main>
+            <div class="tweet-counter">
+              <button class="tweet-button" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+          </form>
+          <h6 id="alert">Limit of 140 characters</h6>
+          <h6 id="alertNoChar">Enter Text to Tweet</h6>
+        </section>
+
+        <!-- Page-specific (main) content here -->
+        <section class="tweet-container"></section>
+      </main>
+    </div>
   </body>
 </html>
