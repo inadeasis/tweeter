@@ -27,13 +27,6 @@ article.tweet {
   padding: 10px;
 }
 
-article.tweet header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #f4f1ec;
-  height: 150px;
-}
-
 article.tweet footer {
   display: flex;
   justify-content: left;
@@ -70,6 +63,21 @@ article.tweet:hover {
 
 .tweet-footer-icons i:hover {
   color: #e8b920;
+}
+
+article.tweet header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: #f4f1ec;
+    height: 100px;
+    
+}
+
+article.tweet header div.username{
+  opacity: 50%;
+  margin-left: auto;
+  padding-right: 20px;
 }
 
 #alert {
