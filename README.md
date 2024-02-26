@@ -21,4 +21,4 @@ This repository is the starter code for the project: Students will fork and clon
 
 !["Screenshot of Tweeter Page for Desktops"](public/images/1.png)
 !["Screenshot of Tweeter Page for Tablets"](public/images/2.png)
-!["Screenshot of Tweeter Page for Smaller Screens"](hpublic/images/3.png)
+!["Screenshot of Tweeter Page for Smaller Screens"](public/images/3.png)
