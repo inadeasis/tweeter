@@ -102,6 +102,7 @@ $(document).ready(() => {
     // This serialized data should be sent to the server in the data field of the AJAX POST request.
     $.post("/tweets/", serializedData).then(() => {
       loadTweets();
+      counterRestart();
       resetForm();
     });
 
