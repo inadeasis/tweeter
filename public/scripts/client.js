@@ -4,6 +4,11 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// Clears textarea on click when typing tweet
+const clearContents = (element) => {
+  element.value = '';
+}
+
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -73,10 +78,11 @@ $(document).ready(() => {
       return;
     }
 
-    /* const eraseText = function() {
-      document.getElementById("tweet-text").value = "";
-    }; */
-    
+    // Resets form after submit
+    const resetForm = () => {
+      $('#tweet-text').val('');
+    }
+
     const counterRestart = function() {
       $('.counter').val(140);
       $('.counter').removeClass("turnRed");
@@ -85,7 +91,6 @@ $(document).ready(() => {
     if (tweetContent.length > 140) {
       $("#alert").slideDown();
       alertElement.style.display = "flex";
-      //eraseText();
       counterRestart();
       return;
     }
@@ -97,6 +102,7 @@ $(document).ready(() => {
     // This serialized data should be sent to the server in the data field of the AJAX POST request.
     $.post("/tweets/", serializedData).then(() => {
       loadTweets();
+      resetForm();
     });
 
     //Fetches tweets from the /tweets page. Uses jQuery to make a request to /tweets and receive the array of tweets as JSON.
