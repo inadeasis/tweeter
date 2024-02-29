@@ -15,12 +15,12 @@ const clearContents = () => {
   });
  }
 
-
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
 
 const createTweetElement = (tweet) => {
   //Use the escape function in out <p> element
@@ -66,7 +66,18 @@ $(document).ready(() => {
   //Hide error messages
   $("#alert").hide();
   $("#alertNoChar").hide();
-
+  
+      //Fetches tweets from the /tweets page. Uses jQuery to make a request to /tweets and receive the array of tweets as JSON.
+    const loadTweets = function() {
+      $.ajax("/tweets/", { method: "GET" })
+        .then(function(response) {
+          renderTweets(response);
+        })
+        .catch(function(error) {
+          console.log("Error", error);
+        });
+    };
+  loadTweets();
   //Event listener for submit and prevent its default behaviour.
   $("#tweet-form").on("submit", (event) => {
     event.preventDefault();
