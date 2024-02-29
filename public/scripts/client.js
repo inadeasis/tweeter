@@ -5,10 +5,16 @@
  */
 
 // Clears textarea on click when typing tweet
-// const clearContents = (element) => {
-//   element.value = '';
-//   counterRestart();
-// }
+const clearContents = () => {
+  $('#tweet-text').focus(function(){
+    $(this).attr('placeholder','');
+  });
+  
+  $('#tweet-text').focusout(function(){
+    $(this).attr('placeholder','Start Tweeting..');
+  });
+ }
+
 
 const escape = function(str) {
   let div = document.createElement("div");
