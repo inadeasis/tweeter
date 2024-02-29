@@ -14,21 +14,3 @@ header h2{
   margin-top: 5px;
   color: #FFF;
 }
-
-/* @media only screen and (min-width: 1024px) {
-
-  header.user-profile {
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    float: left;
-    margin-top: 10em;
-    font-size: smaller;
-  }
-
-  .background {
-    padding-left: 15%;
-    padding-right: 20%;
-
-  }
-} */

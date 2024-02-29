@@ -5,9 +5,10 @@
  */
 
 // Clears textarea on click when typing tweet
-const clearContents = (element) => {
-  element.value = '';
-}
+// const clearContents = (element) => {
+//   element.value = '';
+//   counterRestart();
+// }
 
 const escape = function(str) {
   let div = document.createElement("div");
@@ -91,7 +92,6 @@ $(document).ready(() => {
     if (tweetContent.length > 140) {
       $("#alert").slideDown();
       alertElement.style.display = "flex";
-      counterRestart();
       return;
     }
 
@@ -104,6 +104,7 @@ $(document).ready(() => {
       loadTweets();
       counterRestart();
       resetForm();
+      
     });
 
     //Fetches tweets from the /tweets page. Uses jQuery to make a request to /tweets and receive the array of tweets as JSON.
