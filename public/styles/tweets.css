@@ -71,6 +71,7 @@ article.tweet header {
     flex-direction: row;
     background-color: #f4f1ec;
     height: 100px;
+    word-wrap: break-word;
     
 }
 
@@ -78,6 +79,7 @@ article.tweet header div.username{
   opacity: 50%;
   margin-left: auto;
   padding-right: 20px;
+  word-wrap: break-word;
 }
 
 #alert {

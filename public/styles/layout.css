@@ -20,6 +20,7 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans 3", sans-serif;
+  overflow-wrap: break-word;
 }
 
 /*
@@ -43,6 +44,7 @@ body {
       margin-left: 100px;
       margin-top: 200px;
       font-size: smaller;
+      overflow-wrap: break-word;
     }
     
     nav {
@@ -51,22 +53,33 @@ body {
 
     .container {
       flex-direction: column;
-      justify-content: center;
-      width: 33%;
+      justify-content: left;
+      width: auto;
       float: left;
       margin-right: 10px;
       margin-top: 200px;
+      overflow-wrap: break-word;
    }
 
    body {
      flex-direction: row;
      align-items: flex-start;
+    overflow-wrap: break-word;
    }
 
    .user-banner {
      margin-right: 10px;
      padding-left: 10px;
    }
+
+     article.tweet header div.username {
+       opacity: 50%;
+       margin-left: auto;
+       padding-right: auto;
+       word-wrap: break-word;
+       font-size: smaller;
+     
+     }
  }
 
  
@@ -80,6 +93,7 @@ body {
     margin-left: 100px;
     margin-top: 200px;
     font-size: smaller;
+    overflow-wrap: break-word;
   }
 
   nav {
@@ -89,6 +103,7 @@ body {
    body {
      flex-direction: column;
      align-items: flex-start;
+    overflow-wrap: break-word;
    }
 
    .container {
@@ -97,6 +112,7 @@ body {
     width: 50%;
     float: left;
     margin-top: 200px;
+    overflow-wrap: break-word;
    }
 
    .user-banner {
@@ -120,6 +136,7 @@ body {
   
     body {
       padding-top: 50px;
+      overflow-wrap: break-word;
     }
   }
 

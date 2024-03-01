@@ -7,6 +7,7 @@ header {
   flex-direction: column;
   background-color: #b37f47;
   background-image: url("https://www.transparenttextures.com/patterns/old-wall.png");
+  overflow-wrap: break-word;
   
 }
 
